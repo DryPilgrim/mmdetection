@@ -1,21 +1,12 @@
 # dataset settings
 dataset_type = 'CocoDataset'
-data_root = '/data1/renyu/mmdetection/data/cocovoc/'
-classes = ('person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus',
-            'train', 'truck', 'boat', 'traffic light', 'fire hydrant',
-            'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog',
-            'horse', 'sheep', 'cow', 'elephant', 'bear', 'zebra', 'giraffe',
-            'backpack', 'umbrella', 'handbag', 'tie', 'suitcase', 'frisbee',
-            'skis', 'snowboard', 'sports ball', 'kite', 'baseball bat',
-            'baseball glove', 'skateboard', 'surfboard', 'tennis racket',
-            'bottle', 'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl',
-            'banana', 'apple', 'sandwich', 'orange', 'broccoli', 'carrot',
-            'hot dog', 'pizza', 'donut', 'cake', 'chair', 'couch',
-            'potted plant', 'bed', 'dining table', 'toilet', 'tv', 'laptop',
-            'mouse', 'remote', 'keyboard', 'cell phone', 'microwave',
-            'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock',
-            'vase', 'scissors', 'teddy bear', 'hair drier', 'toothbrush',
-            'sofa','tvmonitor')
+data_root = '/data1/renyu/mmdetection/data/cocovocx/'
+
+classes = ('airplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car',
+               'cat', 'chair', 'cow', 'dining table', 'dog', 'horse',
+               'motorcycle', 'person', 'potted plant', 'sheep', 'sofa', 'train',
+               'tvmonitor')
+
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
 train_pipeline = [
@@ -50,7 +41,6 @@ data = dict(
         type=dataset_type,
         classes=classes,
         ann_file=[
-            data_root + 'annotations/instances_train2017.json', 
             data_root + 'annotations/voc07_train.json',
             data_root + 'annotations/voc07_val.json',
             data_root + 'annotations/voc12_train.json',
