@@ -8,6 +8,7 @@
 # echo "ssssssss"
 
 # conda config --show-sources
+# conda config --add channels https://pypi.tuna.tsinghua.edu.cn/simple
 # conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 # conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
 # conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
